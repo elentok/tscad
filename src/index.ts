@@ -1,9 +1,7 @@
-import { primitives } from "@jscad/modeling";
-
-const { cuboid } = primitives;
+import { hexagonShell } from "./lib/honeycomb";
 
 function main() {
-  return cuboid({ size: [20, 40, 80] });
+  return hexagonShell({ height: 10, thickness: 2 });
 }
 
 export = { main };
